@@ -1,0 +1,13 @@
+@media screen and (max-width: 640px) {
+    nav ul li {
+        border-radius: 1em;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    .desktop {
+        display: none;
+    }
+}

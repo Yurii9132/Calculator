@@ -1,0 +1,38 @@
+@media screen and (min-width: 641px) {
+
+    header {
+        background-image: black;
+    }
+
+    nav ul li {
+        display: inline-block; /*This lists items horizontally and allow them to stretch.*/
+        border-radius: 1em;
+    }
+    .desktop {
+        display: none;
+    }
+
+    nav ul li {
+        padding: .65em;
+        border-top: solid .2em black;
+        display: inline-block; 
+        border-radius: 1em;
+        min-width: 10%;
+        box-shadow: .3em .3em .5em red;
+    }
+
+    main, figure {
+        box-shadow: .5em .5em .5em black;
+    }
+
+    main div .center {
+        padding: 10px;
+        width: 65%;
+        border-right: .3em solid black;
+    }  
+
+    footer {
+        /* background-image: linear-gradient(white black); */
+        box-shadow: .5em .5em .5em black;
+    }
+}
