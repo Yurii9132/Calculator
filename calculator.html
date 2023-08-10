@@ -25,40 +25,35 @@
         </nav>
 
         <main>
-           <table>
-            <caption><input type="text" id="result" value="0" readonly></caption>
-            <tr>
-                <td><input type="button" id="allclear" value="ac" onclick="allclear()"></td>
-                <td><input type="button" id="square" value="x&sup2;" onclick=""></td>
-                <td><input type="button" id="percent" value="%" onclick="persent()"></td>
-                <td><input type="button" id="divide" value="&divide;" onclick="operator(4)"></td>
-            </tr>             
-            <tr>
-                <td><input type="button" id="seven" value="7" onclick="input(7)"></td>
-                <td><input type="button" id="eight" value="8" onclick="input(8)"></td>
-                <td><input type="button" id="nine" value="9" onclick="input(9)"></td>
-                <td><input type="button" id="multiply" value="&times;" onclick="operator(3)"></td>
-            </tr>  
-            <tr>
-                <td><input type="button" id="four" value="4" onclick="input(4)"></td>
-                <td><input type="button" id="five" value="5" onclick="input(5)"></td>
-                <td><input type="button" id="six" value="6" onclick="input(6)"></td>
-                <td><input type="button" id="subtract" value="-" onclick="operator(2)"></td>
-            </tr>
-            <tr>
-                <td><input type="button" id="one" value="1" onclick="input(1)"></td>
-                <td><input type="button" id="two" value="2" onclick="input(2)"></td>
-                <td><input type="button" id="three" value="3" onclick="input(3)"></td>
-                <td><input type="button" id="sum" value="&plus;" onclick="perator(1)"></td>
-            </tr>
-            <tr>
-                <td><input type="button" id="plusminus" value="&plusmn;" onclick="plusminus()"></td>
-                <td><input type="button" id="zero" value="0" onclick="input(0)"></td>
-                <td><input type="button" id="decimalPoint" value="." onclick="decimalPoint()"></td>
-                <td><input type="button" id="equals" value="=" onclick="equals()"></td>
-            </tr>
-                     
-           </table>
+
+            <div class="grid-container">
+                <div class="item1"><input type="text" id="result" value="0" readonly></div>
+
+                <div class="item2"><input type="button" id="allclear" value="ac" onclick="allclear()"></div>
+                <div class="item3"><input type="button" id="square" value="x&sup2;" onclick=""></div>
+                <div class="item4"><input type="button" id="percent" value="%" onclick="persent()"></div>
+                <div class="item5"><input type="button" id="divide" value="&divide;" onclick="operator(4)"></div>
+             
+                <div class="item6"><input type="button" id="seven" value="7" onclick="input(7)"></div>
+                <div class="item7"><input type="button" id="eight" value="8" onclick="input(8)"></div>
+                <div class="item8"><input type="button" id="nine" value="9" onclick="input(9)"></div>
+                <div class="item9"><input type="button" id="multiply" value="&times;" onclick="operator(3)"></div>
+  
+                <div class="item10"><input type="button" id="four" value="4" onclick="input(4)"></div>
+                <div class="item11"><input type="button" id="five" value="5" onclick="input(5)"></div>
+                <div class="item12"><input type="button" id="six" value="6" onclick="input(6)"></div>
+                <div class="item13"><input type="button" id="subtract" value="-" onclick="operator(2)"></div>
+
+                <div class="item14"><input type="button" id="one" value="1" onclick="input(1)"></div>
+                <div class="item15"><input type="button" id="two" value="2" onclick="input(2)"></div>
+                <div class="item16"><input type="button" id="three" value="3" onclick="input(3)"></div>
+                <div class="item17"><input type="button" id="sum" value="&plus;" onclick="perator(1)"></div>
+
+                <div class="item18"><input type="button" id="plusminus" value="&plusmn;" onclick="plusminus()"></div>
+                <div class="item19"><input type="button" id="zero" value="0" onclick="input(0)"></div>
+                <div class="item20"><input type="button" id="decimalPoint" value="." onclick="decimalPoint()"></div>
+                <div class="item21"><input type="button" id="equals" value="=" onclick="equals()"></div>
+            </div>
         </main>
 
         <footer>

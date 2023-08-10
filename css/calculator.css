@@ -1,4 +1,4 @@
-table {
+/* table {
     border: .1em solid black;
     border-collapse: collapse;   
     margin-left: 2.5%;    
@@ -9,39 +9,105 @@ caption {
     border: 0.1 solid black;
     font-size: 1.5em;
     background-color: black;
-}
+} */
 
-table caption input {
+/* table caption input {
     text-align: right; /*This puts our 0 on the right side of the caption. */
-}
+/* } */ 
 
-th, td {
+/* th, td {
     border: 0.1em solid black;
     padding: 0.2em;
     text-align: center;
+}*/
+
+
+/* input {
+    width: 95%;
+    height: 1.5em;
+    font-size: 2em;
+} */
+
+.item1 {
+    grid-area: result;
+    width: 98%;
+    text-align: right;
 }
 
+.item1 input{
+    text-align: right;
+    background-color: #ffffff;
+    font-size: 400%;
+}
+
+.item2 { grid-area: button1; }
+.item3 { grid-area: button2; }
+.item4 { grid-area: button3; }
+.item5 { grid-area: button4; }
+
+.item6 { grid-area: button5; }
+.item7 { grid-area: button6; }
+.item8 { grid-area: button7; }
+.item9 { grid-area: button8; }
+
+.item10 { grid-area: button9; }
+.item11 { grid-area: button10; }
+.item12 { grid-area: button11; }
+.item13 { grid-area: button12; }
+
+.item14 { grid-area: button13; }
+.item15 { grid-area: button14; }
+.item16 { grid-area: button15; }
+.item17 { grid-area: button16; }
+
+.item18 { grid-area: button17; }
+.item19 { grid-area: button18; }
+.item20 { grid-area: button19; }
+.item21 { grid-area: button20; }
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'result result result result'
+        'button1 button2 button3 button4'
+        'button5 button6 button7 button8'
+        'button9 button10 button11 button12'
+        'button13 button14 button15 button16'
+        'button17 button18 button19 button20';
+    gap: 8px;
+    background-color: #0989f1;
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    /* padding: 20px 0; */
+    /* font-size: 30px; */
+}
 
 input {
-    width: 95%;
-    height: 2.5em;
-    font-size: 2em;
+    width: 100%;
+    font-size: 300%;
+    background-color: #c5ffe9;
+    height: 1.5em;
 }
 
 @media screen and (max-width: 640px) {
-    table{
+    .grid-container {
         width: 95%;
     }
 }
 
 @media screen and (min-width: 641px) {
-    table{
+    .grid-container{
         width: 60%;
     }
 }
 
 @media screen and (min-width: 961px) {
-    table{
+    .grid-container{
         width: 30%;
     }
 }
