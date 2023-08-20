@@ -21,7 +21,6 @@ caption {
     text-align: center;
 }*/
 
-
 /* input {
     width: 95%;
     height: 1.5em;
@@ -30,7 +29,7 @@ caption {
 
 .item1 {
     grid-area: result;
-    width: 98%;
+    width: 100%;
     text-align: right;
 }
 

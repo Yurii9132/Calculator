@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="css/style.css">
 
         <link rel="stylesheet" href="css/calculator.css">
-        <script src="js/calculator.js" type="text/javascript"></script> <!-- This calls the external calculator JavaScript.-->
+        <script src="scripts/calculator.js" type="text/javascript"></script> <!-- This calls the external calculator JavaScript.-->
     </head>
 
     <body>
@@ -25,12 +25,12 @@
         </nav>
 
         <main>
-
+            <input id="operation" value="0" type="hidden"> <!-- This is the hidden input field that stores the operation. -->
             <div class="grid-container">
                 <div class="item1"><input type="text" id="result" value="0" readonly></div>
 
                 <div class="item2"><input type="button" id="allclear" value="ac" onclick="allclear()"></div>
-                <div class="item3"><input type="button" id="square" value="x&sup2;" onclick=""></div>
+                <div class="item3"><input type="button" id="square" value="&Sqrt;x" onclick="square()"></div>
                 <div class="item4"><input type="button" id="percent" value="%" onclick="persent()"></div>
                 <div class="item5"><input type="button" id="divide" value="&divide;" onclick="operator(4)"></div>
              
@@ -47,12 +47,12 @@
                 <div class="item14"><input type="button" id="one" value="1" onclick="input(1)"></div>
                 <div class="item15"><input type="button" id="two" value="2" onclick="input(2)"></div>
                 <div class="item16"><input type="button" id="three" value="3" onclick="input(3)"></div>
-                <div class="item17"><input type="button" id="sum" value="&plus;" onclick="perator(1)"></div>
+                <div class="item17"><input type="button" id="sum" value="&plus;" onclick="operator(1)"></div>
 
-                <div class="item18"><input type="button" id="plusminus" value="&plusmn;" onclick="plusminus()"></div>
+                <div class="item18"><input type="button" id="plusminus" value="&plusmn;" onclick="plusMinus()"></div>
                 <div class="item19"><input type="button" id="zero" value="0" onclick="input(0)"></div>
                 <div class="item20"><input type="button" id="decimalPoint" value="." onclick="decimalPoint()"></div>
-                <div class="item21"><input type="button" id="equals" value="=" onclick="equals()"></div>
+                <div class="item21"><input type="button" id="equal" value="=" onclick="equal()"></div>
             </div>
         </main>
 
